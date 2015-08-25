@@ -1368,14 +1368,6 @@ private void About_Click(object sender, RoutedEventArgs e)
             
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            //MessageBox.Show(GetManufacturer());
-            //Email("aperera.school@gmail.com", "suiciwd@gmail.com", "Chess Game has run", "Chess game has been run by " + Environment.UserName + " " + "Environment.UserDomainName" + ", Here is some system info OS: " + GetOSFriendlyName() + " CPU: " + GetCPUName().ToString() + "Make: " + GetManufacturer() );
-        }
-
-       
-
         public static string GetCPUName()
         {
             var val = "" ;
