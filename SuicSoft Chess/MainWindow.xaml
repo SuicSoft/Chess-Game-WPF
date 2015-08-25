@@ -1,0 +1,251 @@
+﻿<Controls:MetroWindow x:Class="SuicSoft_Chess.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+
+        Title="SuicSoft Material Design Chess" Height="802" Width="703"  Loaded="Window_Loaded" Background="White" GlowBrush="{DynamicResource AccentColorBrush}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="62"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Background="#03A9F4" Effect="{StaticResource z-depth2}">
+            <Button Margin="0,10,10,0" HorizontalAlignment="Right" VerticalAlignment="Top" Height="36" Width="87" Background="{x:Null}" Click="About_Click">About</Button>
+            <Button Margin="10,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="36" Width="87" Background="{x:Null}">Settings</Button>
+            <Label HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36" Foreground="White">SuicSoft Chess</Label>
+        </Grid>
+        <Grid Margin="12" Grid.Row="1">
+            <Viewbox>
+                <StackPanel x:Name="board" Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal">
+                        <Label FontSize="48" Margin="0,0,7,0">8</Label>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="A8" Height="Auto" Background="{x:Null}" FontSize="40" Foreground="Black" Click="A8_Click">♖</Button>
+                        </Border>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="B8" Height="Auto" Background="{x:Null}" FontSize="40" Foreground="Black" Click="B8_Click">♘</Button>
+                        </Border>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="C8" Height="Auto" Background="{x:Null}" FontSize="40" Foreground="Black" Click="C8_Click">♗</Button>
+                        </Border>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="D8" Height="Auto" Background="{x:Null}" FontSize="40" Foreground="Black" Click="D8_Click">♛</Button>
+                        </Border>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="E8" Height="Auto" Background="{x:Null}" FontSize="40" Foreground="Black" Click="E8_Click">♚</Button>
+                        </Border>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="F8" Height="Auto" Background="{x:Null}" FontSize="40" Foreground="Black" Click="F8_Click">♗</Button>
+                        </Border>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="G8" Height="Auto" Background="{x:Null}" FontSize="40" Foreground="Black" Click="G8_Click">♘</Button>
+                        </Border>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="H8" Height="Auto" Background="{x:Null}" FontSize="40" Foreground="Black" Click="H8_Click">♖</Button>
+                        </Border>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label FontSize="48" Margin="0,0,7,0">7</Label>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="A7" Height="Auto" Background="{x:Null}" FontSize="40" Foreground="Black" Click="A7_Click">♙</Button>
+                        </Border>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="B7" Height="Auto" Background="{x:Null}" FontSize="40" Foreground="Black" Click="B7_Click">♙</Button>
+                        </Border>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="C7" Height="Auto" Background="{x:Null}" FontSize="40" Foreground="Black" Click="C7_Click">♙</Button>
+                        </Border>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="D7" Height="Auto" Background="{x:Null}" FontSize="40" Foreground="Black" Click="D7_Click">♙</Button>
+                        </Border>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="E7" Height="Auto" Background="{x:Null}" FontSize="40" Foreground="Black" Click="E7_Click">♙</Button>
+                        </Border>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="F7" Height="Auto" Background="{x:Null}" FontSize="40" Foreground="Black" Click="F7_Click">♙</Button>
+                        </Border>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="G7" Height="Auto" Background="{x:Null}" FontSize="40" Foreground="Black" Click="G7_Click">♙</Button>
+                        </Border>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="H7" Height="Auto" Background="{x:Null}" FontSize="40" Foreground="Black" Click="H7_Click">♙</Button>
+                        </Border>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label FontSize="48" Margin="0,0,7,0">6</Label>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="A6" Height="Auto" Background="{x:Null}" FontSize="40" Click="A6_Click"></Button>
+                        </Border>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="B6" Height="Auto" Background="{x:Null}" FontSize="40" Click="B6_Click"></Button>
+                        </Border>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="C6" Height="Auto" Background="{x:Null}" FontSize="40" Click="C6_Click"></Button>
+                        </Border>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="D6" Height="Auto" Background="{x:Null}" FontSize="40" Click="D6_Click"></Button>
+                        </Border>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="E6" Height="Auto" Background="{x:Null}" FontSize="40" Click="E6_Click"></Button>
+                        </Border>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="F6" Height="Auto" Background="{x:Null}" FontSize="40" Click="F6_Click"></Button>
+                        </Border>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="G6" Height="Auto" Background="{x:Null}" FontSize="40" Click="G6_Click"></Button>
+                        </Border>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="H6" Height="Auto" Background="{x:Null}" FontSize="40" Click="H6_Click"></Button>
+                        </Border>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label FontSize="48" Margin="0,0,7,0">5</Label>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="A5" Height="Auto" Background="{x:Null}" FontSize="40" Click="A5_Click"></Button>
+                        </Border>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="B5" Height="Auto" Background="{x:Null}" FontSize="40" Click="B5_Click"></Button>
+                        </Border>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="C5" Height="Auto" Background="{x:Null}" FontSize="40" Click="C5_Click"></Button>
+                        </Border>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="D5" Height="Auto" Background="{x:Null}" FontSize="40" Click="D5_Click"></Button>
+                        </Border>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="E5" Height="Auto" Background="{x:Null}" FontSize="40" Click="E5_Click"></Button>
+                        </Border>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="F5" Height="Auto" Background="{x:Null}" FontSize="40" Click="F5_Click"></Button>
+                        </Border>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="G5" Height="Auto" Background="{x:Null}" FontSize="40" Click="G5_Click"></Button>
+                        </Border>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="H5" Height="Auto" Background="{x:Null}" FontSize="40" Click="H5_Click"></Button>
+                        </Border>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label FontSize="48" Margin="0,0,7,0">4</Label>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="A4" Height="Auto" Background="{x:Null}" FontSize="40" Click="A4_Click"></Button>
+                        </Border>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="B4" Height="Auto" Background="{x:Null}" FontSize="40" Click="B4_Click"></Button>
+                        </Border>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="C4" Height="Auto" Background="{x:Null}" FontSize="40" Click="C4_Click"></Button>
+                        </Border>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="D4" Height="Auto" Background="{x:Null}" FontSize="40" Click="D4_Click" ></Button>
+                        </Border>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="E4" Height="Auto" Background="{x:Null}" FontSize="40" Click="E4_Click" ></Button>
+                        </Border>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="F4" Height="Auto" Background="{x:Null}" FontSize="40" Click="F4_Click"></Button>
+                        </Border>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="G4" Height="Auto" Background="{x:Null}" FontSize="40" Click="G4_Click"></Button>
+                        </Border>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="H4" Height="Auto" Background="{x:Null}" FontSize="40" Click="H4_Click"></Button>
+                        </Border>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <Label FontSize="48" Margin="0,0,7,0">3</Label>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="A3" Height="Auto" Background="{x:Null}" FontSize="40" Click="A3_Click"></Button>
+                        </Border>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="B3" Height="Auto" Background="{x:Null}" FontSize="40" Click="B3_Click"></Button>
+                        </Border>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="C3" Height="Auto" Background="{x:Null}" FontSize="40" Click="C3_Click"></Button>
+                        </Border>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="D3" Height="Auto" Background="{x:Null}" FontSize="40" Click="D3_Click"></Button>
+                        </Border>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="E3" Height="Auto" Background="{x:Null}" FontSize="40" Click="E3_Click"></Button>
+                        </Border>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="F3" Height="Auto" Background="{x:Null}" FontSize="40" Click="F3_Click"></Button>
+                        </Border>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="G3" Height="Auto" Background="{x:Null}" FontSize="40" Click="G3_Click"></Button>
+                        </Border>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="H3" Height="Auto" Background="{x:Null}" FontSize="40" Click="H3_Click"></Button>
+                        </Border>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label FontSize="48" Margin="0,0,7,0">2</Label>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="A2" Height="Auto" Background="{x:Null}" FontSize="40" Click="A2_Click">♙</Button>
+                        </Border>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="B2" Height="Auto" Background="{x:Null}" FontSize="40" Click="B2_Click">♙</Button>
+                        </Border>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="C2" Height="Auto" Background="{x:Null}" FontSize="40" Click="C2_Click">♙</Button>
+                        </Border>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="D2" Height="Auto" Background="{x:Null}" FontSize="40" Click="D2_Click">♙</Button>
+                        </Border>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="E2" Height="Auto" Background="{x:Null}" FontSize="40" Click="E2_Click">♙</Button>
+                        </Border>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="F2" Height="Auto" Background="{x:Null}" FontSize="40" Click="F2_Click">♙</Button>
+                        </Border>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="G2" Height="Auto" Background="{x:Null}" FontSize="40" Click="G2_Click">♙</Button>
+                        </Border>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="H2" Height="Auto" Background="{x:Null}" FontSize="40" Click="H2_Click">♙</Button>
+                        </Border>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label FontSize="48" Margin="0,0,7,0">1</Label>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="A1" Height="Auto" Background="{x:Null}" FontSize="40" Click="A1_Click">♖</Button>
+                        </Border>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="B1" Height="Auto" Background="{x:Null}" FontSize="40" Click="B1_Click">♘</Button>
+                        </Border>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="C1" Height="Auto" Background="{x:Null}" FontSize="40" Click="C1_Click">♗</Button>
+                        </Border>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="D1" Height="Auto" Background="{x:Null}" FontSize="40" Click="D1_Click">♛</Button>
+                        </Border>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="E1" Height="Auto" Background="{x:Null}" FontSize="40" Click="E1_Click">♚</Button>
+                        </Border>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="F1" Height="Auto" Background="{x:Null}" FontSize="40" Click="F1_Click">♗</Button>
+                        </Border>
+                        <Border Style="{DynamicResource Chess}">
+                            <Button x:Name="G1" Height="Auto" Background="{x:Null}" FontSize="40" Click="G1_Click">♘</Button>
+                        </Border>
+                        <Border Style="{DynamicResource ChessL}">
+                            <Button x:Name="H1" Height="Auto" Background="{x:Null}" FontSize="40" Click="H1_Click">♖</Button>
+                        </Border>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label FontSize="48" Margin="57,0,20,0">A</Label>
+                        <Label FontSize="48" Margin="18,0,20,0" >B</Label>
+                        <Label FontSize="48" Margin="18,0,20,0" >C</Label>
+                        <Label FontSize="48" Margin="18,0,20,0" >D</Label>
+                        <Label FontSize="48" Margin="18,0,20,0" >E</Label>
+                        <Label FontSize="48" Margin="18,0,20,0" >F</Label>
+                        <Label FontSize="48" Margin="18,0,20,0" >G</Label>
+                        <Label FontSize="48" Margin="18,0,20,0" >H</Label>
+                    </StackPanel>
+                </StackPanel>
+            </Viewbox>
+        </Grid>
+       </Grid>
+ </Controls:MetroWindow>
