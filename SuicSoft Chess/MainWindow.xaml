@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
          xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
 
-        Title="SuicSoft Material Design Chess" Height="802" Width="703"  Loaded="Window_Loaded" Background="White" GlowBrush="{DynamicResource AccentColorBrush}">
+        Title="SuicSoft Material Design Chess" Height="802" Width="703" Background="White" GlowBrush="{DynamicResource AccentColorBrush}">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="62"/>
